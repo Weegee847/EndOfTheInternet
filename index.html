@@ -1,6 +1,19 @@
 <html>
  <body>
 <title>Java</title>
- <button type="button" onclick="Why did you press it">Click this button</button>
- <p id="demo"></p>
+  
+<button onclick="myFunction()">Don't Press this button?</button>
+
+<div id="myDIV">Why did you press it</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>  
  </body>
